@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Oscars By Simeon</title>
+		<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan" />
+		<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
+		<meta name="author" content="Peter Finlan" />
+		<!-- Bootstrap -->
+		<script src="js/modernizr.custom.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jquery.fancybox.css" rel="stylesheet">
+		<link href="css/flickity.css" rel="stylesheet" >
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/queries.css" rel="stylesheet">
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+            	</head>
+	<body>
+		
+		<header>
+			<section class="hero">
+				<div class="texture-overlay"></div>
+				<div class="container">
+					<div class="row nav-wrapper">
+						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+						</div>
+					</div>
+					<div class="row hero-content">
+						<div class="col-md-12">
+							<h1 class="animated fadeInDown">Capital One Oscars Data Challenge</h1>
+							<a href="http://simeonkakpovi.com" class="use-btn animated fadeInUp">by Simeon Kakpovi</a> <a href="#about" class="learn-btn animated fadeInUp">Learn more <i class="fa fa-arrow-down"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+        
+            
+        
+		<section class="footer video" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1><a href="https://www.youtube.com/watch?v=y-dSdoSpBY0" class="youtube-media" autoplay="true"><i class="fa fa-play-circle-o"></i> What happened at the Oscars?</a></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+        <div id="chart_div"></div>
+		<section class="features-intro">
+			<div class="container-fluid">
+				<div class="row">
+                    
+                </div>
+			</div>
+		</section>
+
+  <div class="container text-center sp" id="movie">
+    <h1> Tweets of Oscar best picture nominees</h1>
+      <div id="columnchart_material" style="width: 1300px; height: 500px;"></div>   
+    </div>			
+   <hr> 
+    
+      <div class="container text-center sp" id="birdman">  
+    <h1> Birdman tweets over time </h1>
+   <div id="curve_chart" style="width: 1300px; height: 500px"></div>
+    </div> 
+    
+    <hr>
+    
+    <div class="container text-center sp" id="state">
+      <h1> Oscars Tweets by State </h1>
+      <div id="map_canvas" style="width: 1300px; height: 500px;"></div>   
+    </div>
+   
+
+    
+    <section class="download" id="download">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center wp4">
+						<h1>Like This?</h1>
+						<a href="http://simeonkakpovi.com" class="download-btn">Check me out! <i class="fa fa-child"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h1 class="footer-logo">
+						
+						</h1>
+						<h3> Designed &amp; by <a href="http://www.simeonkakpovi.com">Simeon Kakpovi</a></h3>
+					</div>
+					<div class="col-md-7">
+						<ul class="footer-nav">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay overlay-boxify">
+			<nav>
+				<ul>
+					<li><a href="#movie"><i class="fa fa-bar-chart"></i>Movie Rankings</a></li>
+					<li><a href="#birdman"><i class="fa fa-line-chart"></i>Birdman Popularity</a></li>
+				</ul>
+				<ul>
+					<li><a href="#state"><i class="fa fa-globe"></i> Tweets by State</a></li>
+					<li><a href="http://simeonkakpovi.com"><i class="fa fa-child"></i>Visit The Author</a></li>
+				</ul>
+			</nav>
+		</div>
+    
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src=js/charts.js></script>
+      <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Birdman Tweets', 'Time'],
+          ['1:30',  168],
+          ['2:00',  79],
+          ['2:17',  1082],
+          ['2:30',  1026],
+          ['2:30',  1026],
+          ['3:19',  508],
+          ['3:30',  48],
+          ['4:27',  780],
+          ['4:38',  1049],
+          ['5:05',  1008],
+          ['5:30', 0]
+        ]);
+
+        var options = {
+          title: 'Birdman Tweets',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+         
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+<script src=js/map.js></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/min/toucheffects-min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/retina.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/min/scripts-min.js"></script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
+</html>
